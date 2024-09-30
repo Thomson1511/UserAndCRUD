@@ -1,3 +1,9 @@
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter'){
+      login();
+  }
+});
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyDuIxogdpkOWG0aGjrhRRkURnXaa7A2g1A",
@@ -65,6 +71,14 @@ var firebaseConfig = {
       alert(error_message)
     })
   }
+
+  function hideLogin(){
+    var LoginMenu = document.getElementById("form_container");
+    var InputMenu = document.getElementById("input_containter");
+
+    LoginMenu.style.display = "none";
+    InputMenu.style.display = "flex";
+  }
   
   // Set up our login function
   function login () {
@@ -97,6 +111,7 @@ var firebaseConfig = {
   
       // DOne
       alert('User Logged In!')
+      hideLogin();
   
     })
     .catch(function(error) {

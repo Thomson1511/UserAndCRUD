@@ -13,7 +13,6 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <div id="content_container">
             <div id="form_container">
                 <div id="form_header_container">
                     <h2 id="form_header"> Login + Firebase Database </h2>
@@ -23,7 +22,7 @@
                     <div id="form_content_inner_container">
                         <input type="text" id="full_name" placeholder="Full name">
                         <input type="email" id="email" placeholder="Email">
-                        <input type="password" id="password" placeholder="New Password">
+                        <input type="password" id="password" placeholder="Password">
 
                         <div id="button_container">
                             <button onclick="login()" id="log">Login</button>
@@ -32,24 +31,21 @@
                         <!-- New input fields for "honnan" and "hova" -->
                         
                     </div>
-                    <div id="form_content_outer_container">
-                        <label for="honnan">Honnan:</label>
-                        <input type="text" id="honnan" placeholder="Honnan">
-
-                        <label for="hova">Hova:</label>
-                        <input type="text" id="hova" placeholder="Hova">
-
-
-                        <div id="crud_buttons">
-                            <button onclick="addEntry()">Add Entry</button>
-                            <button onclick="updateEntry()">Update Entry</button>
-                            <button onclick="deleteEntry()">Delete Entry</button>
-                            <button onclick="readEntry()">Read Entry</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
+            <div id="input_containter">
+
+                <div id="crud_buttons">
+                    <button onclick="addEntry()">Add Entry</button>
+                    <button onclick="updateEntry()">Update Entry</button>
+                    <button onclick="deleteEntry()">Delete Entry</button>
+                    <button onclick="readEntry()">Read Entry</button>
+                </div>
+                <div id="crud_inputs">
+                    <input type="text" id="IcaoCode" placeholder="IcaoCode">
+                    <input type="text" id="Callsign" placeholder="Callsign">
+                </div>
+            </div>
     </body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
