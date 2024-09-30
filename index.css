@@ -1,7 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+    background: black;
 
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ html, body {
 }
 #content_container {
     width: 30%;
-    height: 70%;
+    height: 45%;
 }
 
 #form_container {
@@ -83,6 +83,9 @@ html, body {
     float: left;
 
 }
+#form_content_outer_container{
+    display: none;
+}
 
 input {
     width: 100%;
@@ -102,35 +105,18 @@ input {
     border-top-right-radius: 2%;
     border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
 }
-
-#button_container {
-    width: 100%;
-    height: 10%;
-
-    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
-    color: #fff;
-
-    float: left;
-
-    margin-top: 5px;
+#password{
+    display: none;
 }
-
-#button_container button {
-    width: 50%;
-    height: 100%;
-    float: left;
-
-    background: transparent;
-    color: inherit;
-
-    font-family: Montserrat;
-    letter-spacing: 1px;
-    font-weight: 900;
-    font-size: 12px;
-
-    cursor: pointer;
-
+#regi{
+    display: none;
+}
+#log{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
+}
+#button_container{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
